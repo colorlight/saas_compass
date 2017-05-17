@@ -1,0 +1,63 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/*
+ *CONTENTS
+ *
+ *SETTINGS
+ *variables...............................变量集中存储文件
+
+
+ *COMPONENTS
+ *reset...................................Compass内置浏览器重置样式
+
+ *BUSINESS
+
+
+ *BASE
+ *screen.scss.............................针对站点主页的样式修饰
+
+*/
+
+@import "variables", "compass/reset";
+
+
+// 主标题样式
+.headling {
+	font-family: $headline-ff;
+}
+
+/*页面主体内容样式*/
+.main-sec {
+	font-family: $main-sec-ff;
+
+	.headline {
+		font-family: $main-sec-ff;
+		font-size: 22px;
+	}
+
+	.detail {
+		font-size: 16px;
+	}
+
+	.detailspec {
+		font: {
+			family: $main-sec-ff;
+			size: 16px
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+// .main-sec .headline{
+// 	font-family: $main-sec-ff;
+// }
