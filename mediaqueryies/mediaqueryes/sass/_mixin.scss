@@ -1,0 +1,7 @@
+
+@mixin col-6($width:50%){
+  @media(min-width: 768px){
+     width: $width;
+    float: left;
+  }
+}

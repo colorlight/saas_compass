@@ -60,7 +60,7 @@ p {
   background-image: url("/css/imag/instr.png");
 }
 
-%error {
+.error {
   color: #f00;
 }
 
@@ -69,8 +69,8 @@ p {
 }
 
 .serious-error{
-  @extend %error;
-  @extend .warning;
+  @extend .error, .warning;
+  // @extend .warning;
   border: 1px soild #f00;
 }
 
